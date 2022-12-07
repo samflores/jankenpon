@@ -1,0 +1,11 @@
+require: rubocop-minitest
+
+AllCops:
+  NewCops: enable
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/jankenpon_spec.rb
+
+Style/Documentation:
+  Enabled: false
