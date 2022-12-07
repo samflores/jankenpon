@@ -7,7 +7,7 @@ class TradidionalRuleSet
     SCISSORS: [:PAPER]
   }.freeze
 
-  def beatten_by(name)
+  def shapes_beaten_by(name)
     self.class::BEATS.fetch(name)
   end
 end
@@ -30,7 +30,7 @@ class Shape
   end
 
   def beats(rule_set)
-    rule_set.beatten_by(name)
+    rule_set.shapes_beaten_by(name)
   end
 
   def name
