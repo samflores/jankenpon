@@ -36,6 +36,10 @@ class Shape
   def name
     @name ||= self.class.name.upcase.to_sym
   end
+
+  def to_s
+    self.class.name
+  end
 end
 
 class Rock < Shape; end
